@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "Perintah CLI untuk Android"
-date: 2021-04-13" "22:53:36
+title: "Perintah CLI untuk Android ⛳️"
+date: 2023-02-28" "22:53:36
 categories: android
-emoticon: ⛳️
 ---
 
 Hingga saat ini, sudah sangat jarang saya menggunakan _Build/Compile_ yang _built-in_ dari Android Studio. Karena sehari-hari pekerjaanku sudah berorientasi modularisasi, maka penggunaan _Build Project_ yang disedikan oleh Android Studio kurang tepat karena berdampak pada performa _device_ yang digunakan, salah satunya _build time_ yang cukup lama.
@@ -56,7 +55,7 @@ alias installRun = "./gradlew assembleDebug --offline -x lint && adb shell am st
 
 Untuk `installRun`, silahkan tentukan _target applink_ melalui parameter:
 ```bash
-$ installRun "app://isfaaghyth/home"
+$ installRun "app://putrarifin/home"
 ```
 
 

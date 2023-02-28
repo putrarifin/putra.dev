@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Perintah ADB"
-date: 2021-04-12" "09:46:55
+title: "Perintah ADB 🤖"
+date: 2023-02-28" "09:46:55
 categories: android
 emoticon: 🤖
 ---

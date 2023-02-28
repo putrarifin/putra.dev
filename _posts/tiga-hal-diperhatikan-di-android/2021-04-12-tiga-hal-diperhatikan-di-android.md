@@ -1,9 +1,7 @@
 ---
-layout: post
-title: "3 poin penting pada Android"
-date: 2021-04-12" "20:44:32
+title: "3 poin penting pada Android 🔥"
+date: 2023-02-28" "20:44:32
 categories: android
-emoticon: 🔥
 ---
 
 ##### 1. Android Context
