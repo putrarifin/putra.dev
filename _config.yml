@@ -11,7 +11,7 @@ mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:
-  name: putrarifin # author name
+  name: Muh. Arif Saputra # author name
   bio: >- # tell to the world
     Situs ini merupakan tempat saya menulis untuk diri sendiri dan berbagi ilmu seputar pemrograman. 
     temukan repositori saya di <a href="https://github.com/putrarifin" target="_blank" rel="noopener">@putrarifin</a>.

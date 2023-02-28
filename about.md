@@ -1,5 +1,5 @@
 ---
-title: Putra.
+title: Putra
 permalink: /about/
 layout: page
 excerpt: Hello peeps, I'm Software Engineer from Makassar, This blog for documentation about my programming journey.
