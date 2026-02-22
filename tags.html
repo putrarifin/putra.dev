@@ -2,26 +2,43 @@
 title: Tags
 permalink: /tags/
 layout: page
-excerpt: Sorted article by tags.
+excerpt: Semua topik yang pernah saya tulis.
 ---
 
-<div class="archive-tags">
-  <a class="tag-item" href="#">all</a>
-  {%- for tag in site.tags -%} 
+<!-- Header -->
+<div class="archive-header" style="background: linear-gradient(135deg, var(--accent-purple) 0%, var(--accent-blue) 100%);">
+  <h1>🏷️ Topics</h1>
+  <p>Jelajahi artikel berdasarkan topik</p>
+</div>
+
+<!-- Tags Cloud -->
+<div class="tags-cloud">
+  {%- for tag in site.tags -%}
     {% capture name %}{{ tag | first }}{% endcapture %}
-    <a class="tag-item" href="#{{name}}">{{ name }}</a> 
+    <a class="tag-large" href="#{{name}}">
+      {{ name }}
+      <span class="count">{{ tag | last | size }}</span>
+    </a>
   {%- endfor -%}
 </div>
 
+<!-- Posts by Tag -->
 {%- for tag in site.tags -%}
   {%- capture name -%}{{ tag | first }}{%- endcapture -%}
-  <h2 id="{{ name }}">{{ name | upcase }}</h2>
-  {%- for post in site.tags[name] -%}
-    <article class="post-item" id="results-container">
-      <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
-      <h3 class="post-item-title">
-        <a href="{{ post.url }}">{{ post.title | escape }}</a>
-      </h3> 
-    </article>
-  {%- endfor -%}
+  <div class="tag-group" id="{{ name }}">
+    <h2>
+      {{ name | upcase }}
+      <span class="count">{{ site.tags[name].size }} artikel</span>
+    </h2>
+    {%- for post in site.tags[name] -%}
+      <article class="post-item">
+        <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
+        <div>
+          <h4 class="post-item-title">
+            <a href="{{ post.url }}">{{ post.title | escape }}</a>
+          </h4>
+        </div>
+      </article>
+    {%- endfor -%}
+  </div>
 {%- endfor -%}
