@@ -26,7 +26,7 @@
   />
   {% if paginator.previous_page %}
   <link
-    rel="sebelumnya"
+    rel="prev"
     href="{{
       paginator.previous_page_path
         | remove: 'index.html'
@@ -35,7 +35,7 @@
   />
   {% endif %} {% if paginator.next_page %}
   <link
-    rel="berikutnya"
+    rel="next"
     href="{{
       paginator.next_page_path
         | remove: 'index.html'
@@ -55,6 +55,7 @@
     }}"
   />
   <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta name="robots" content="index, follow" />
   <meta property="fb:app_id" content="{{ site.fb_appid }}" />
   <meta
     property="og:site_name"
@@ -68,7 +69,7 @@
       site.author.name
     }}{% else %}{{ site.title | escape }}{% endif %}"
   />
-  {% if page.location %}
+  {% if page.layout == "post" %}
   <meta property="og:type" content="article" />
   <meta
     property="article:publisher"
@@ -155,8 +156,8 @@
     href="/assets/favicons/safari-pinned-tab.svg"
     color="#5bbad5"
   />
-  <meta name="apple-mobile-web-app-title" content="Jekyll Klise" />
-  <meta name="application-name" content="Jekyll Klise" />
+  <meta name="apple-mobile-web-app-title" content="{{ site.title }}" />
+  <meta name="application-name" content="{{ site.title }}" />
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#2c2c2c" />
 
