@@ -10,6 +10,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.1.0"
 gem "csv" # Ruby 3.4+ compatibility for Jekyll dependency
+gem "base64" # Ruby 3.4+ compatibility for safe_yaml/Jekyll dependency
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 
