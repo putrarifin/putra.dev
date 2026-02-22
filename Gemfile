@@ -9,8 +9,6 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.1.0"
-gem "csv" # Ruby 3.4+ compatibility for Jekyll dependency
-gem "base64" # Ruby 3.4+ compatibility for safe_yaml/Jekyll dependency
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 
@@ -31,3 +29,7 @@ end
 
 # Performance-booster for watching directories on Windows
 # gem "wdm", "~> 0.1.0" if Gem.win_platform?
+
+# Ruby 3.4+ moved some stdlib libs out of default gems (needed by Jekyll deps on Netlify)
+gem "csv"
+gem "base64"
